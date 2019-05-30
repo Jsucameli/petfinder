@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://code.jquery.com/jquery.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.bundle.min.js"
+    integrity="sha384-feJI7QwhOS+hwpX2zkaeJQjeiwlhOP+SdQDqhgvvo1DsjtiSQByFdThsxO669S2D"
+    crossorigin="anonymous"></script>
+  <title>Survey</title>
+</head>
+
+<body>
+  <div class="container">
+    <div class="jumbotron mt-2" style="color:black;background-color:palegreen;">
+      <h1 class="display-4">Survey Questions</h1>
+      <hr class="my-4">
+    </div>
+    <div class="container">
+      <form>
+        <div class="row">
+          <div class="col-lg-6 mb-2">
+            <div class="card" style="height:100%;background-color:palegreen;color:black;border:none;">
+              <div class="card-body">
+                <h5 class="card-title">Name</h5>
+                <input id="name" type="text" class="form-control" required="true">
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6 mb-2">
+            <div class="card" style="height:100%;background-color:palegreen;color:black;border:none;">
+              <div class="card-body">
+                <h5 class="card-title">Link to Photo Image</h5>
+                <input id="photo" type="text" class="form-control" required="true">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-3 mb-2">
+            <div class="card" style="height:100%;background-color:rgb(182, 4, 253);color:white;border:none;">
+              <div class="card-body">
+                <h5 class="card-title">Question #1</h5>
+                <div class="mb-2 textBox">
+                  <p class="card-text">Is your mind always buzzing with unexplored ideas.</p>
+                </div>
+                <select required="true" class="form-control" id="q1">
+                  <option value="">Select an Option</option>
+                  <option value="1">1 (Strongly Disagree)</option>
+                  <option value="2">2 (Partly Disagree)</option>
+                  <option value="3">3 (Neutral)</option>
+                  <option value="4">4 (Partly Agree)</option>
+                  <option value="5">5 (Strongly Agree)</option>
+                </select>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 mb-2">
+            <div class="card" style="height:100%;background-color:rgb(182, 4, 253);color:white;border:none;">
+              <div class="card-body">
+                <h5 class="card-title">Question #2</h5>
+                <div class="mb-2 textBox">
+                  <p class="card-text">Do you rely more on your experience than imagination.</p>
+                </div>
+                <select required="true" class="form-control" id="q2">
+                  <option value="">Select an Option</option>
+                  <option value="1">1 (Strongly Disagree)</option>
+                  <option value="2">2 (Partly Disagree)</option>
+                  <option value="3">3 (Neutral)</option>
+                  <option value="4">4 (Partly Agree)</option>
+                  <option value="5">5 (Strongly Agree)</option>
+                </select>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 mb-2">
+            <div class="card" style="height:100%;background-color:rgb(182, 4, 253);color:white;border:none;">
+              <div class="card-body">
+                <h5 class="card-title">Question #3</h5>
+                <div class="mb-2 textBox">
+                  <p class="card-text">You find it easy to stay relaxed while out in the sun.
+                  </p>
+                </div>
+                <select required="true" class="form-control" id="q3">
+                  <option value="">Select an Option</option>
+                  <option value="1">1 (Strongly Disagree)</option>
+                  <option value="2">2 (Partly Disagree)</option>
+                  <option value="3">3 (Neutral)</option>
+                  <option value="4">4 (Partly Agree)</option>
+                  <option value="5">5 (Strongly Agree)</option>
+                </select>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 mb-2">
+            <div class="card" style="height:100%;background-color: rgb(182, 4, 253);color:white;border:none;">
+              <div class="card-body">
+                <h5 class="card-title">Question #4</h5>
+                <div class="mb-2 textBox">
+                  <p class="card-text">You rarely do something just out of sheer curiosity.</p>
+                </div>
+                <select required="true" class="form-control" id="q4">
+                  <option value="">Select an Option</option>
+                  <option value="1">1 (Strongly Disagree)</option>
+                  <option value="2">2 (Partly Disagree)</option>
+                  <option value="3">3 (Neutral)</option>
+                  <option value="4">4 (Partly Agree)</option>
+                  <option value="5">5 (Strongly Agree)</option>
+                </select>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-3 mb-2">
+            <div class="card" style="height:100%;background-color:rgb(182, 4, 253);color:white;border:none;">
+              <div class="card-body">
+                <h5 class="card-title">Question #5</h5>
+                <div class="mb-2 textBox">
+                  <p class="card-text">People can rarely upset you.</p>
+                </div>
+                <select required="true" class="form-control" id="q5">
+                  <option value="">Select an Option</option>
+                  <option value="1">1 (Strongly Disagree)</option>
+                  <option value="2">2 (Partly Disagree)</option>
+                  <option value="3">3 (Neutral)</option>
+                  <option value="4">4 (Partly Agree)</option>
+                  <option value="5">5 (Strongly Agree)</option>
+                </select>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 mb-2">
+            <div class="card" style="height:100%;background-color:rgb(182, 4, 253);color:white;border:none;">
+              <div class="card-body">
+                <h5 class="card-title">Question #6</h5>
+                <div class="mb-2 textBox">
+                  <p class="card-text">It's hard for you to relate to other’s feelings.</p>
+                </div>
+                <select required="true" class="form-control" id="q6">
+                  <option value="">Select an Option</option>
+                  <option value="1">1 (Strongly Disagree)</option>
+                  <option value="2">2 (Partly Disagree)</option>
+                  <option value="3">3 (Neutral)</option>
+                  <option value="4">4 (Partly Agree)</option>
+                  <option value="5">5 (Strongly Agree)</option>
+                </select>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 mb-2">
+            <div class="card" style="height:100%;background-color:rgb(182, 4, 253);color:white;border:none;">
+              <div class="card-body">
+                <h5 class="card-title">Question #7</h5>
+                <div class="mb-2 textBox">
+                  <p class="card-text">do you find it satisfing to go in crilcles all day.</p>
+                </div>
+                <select required="true" class="form-control" id="q7">
+                  <option value="">Select an Option</option>
+                  <option value="1">1 (Strongly Disagree)</option>
+                  <option value="2">2 (Partly Disagree)</option>
+                  <option value="3">3 (Neutral)</option>
+                  <option value="4">4 (Partly Agree)</option>
+                  <option value="5">5 (Strongly Agree)</option>
+                </select>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 mb-2">
+            <div class="card" style="height:100%;background-color:rgb(182, 4, 253);color:white;border:none;">
+              <div class="card-body">
+                <h5 class="card-title">Question #8</h5>
+                <div class="mb-2 textBox">
+                  <p class="card-text">You rarely get carried away by fantasies and ideas.</p>
+                </div>
+                <select required="true" class="form-control" id="q8">
+                  <option value="">Select an Option</option>
+                  <option value="1">1 (Strongly Disagree)</option>
+                  <option value="2">2 (Partly Disagree)</option>
+                  <option value="3">3 (Neutral)</option>
+                  <option value="4">4 (Partly Agree)</option>
+                  <option value="5">5 (Strongly Agree)</option>
+                </select>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div id="image-one" class="col-lg-3 text-center my-auto"><i class="fas fa-users fa-10x"
+              style="color:#8860D0"></i></div>
+          <div class="col-lg-3 mb-2">
+            <div class="card" style="height:100%;background-color:rgb(182, 4, 253);color:white;border:none;">
+              <div class="card-body">
+                <h5 class="card-title">Question #9</h5>
+                <div id="maxHeight" class="mb-2 textBox">
+                  <p class="card-text">You think everyone’s should serve and worship you.</p>
+                </div>
+                <select required="true" class="form-control" id="q9">
+                  <option value="">Select an Option</option>
+                  <option value="1">1 (Strongly Disagree)</option>
+                  <option value="2">2 (Partly Disagree)</option>
+                  <option value="3">3 (Neutral)</option>
+                  <option value="4">4 (Partly Agree)</option>
+                  <option value="5">5 (Strongly Agree)</option>
+                </select>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 mb-2">
+            <div class="card" style="height:100%;background-color:rgb(182, 4, 253);color:white;border:none;">
+              <div class="card-body">
+                <h5 class="card-title">Question #10</h5>
+                <div class="mb-2 textBox">
+                  <p class="card-text">You feel more energetic after spending time people.</p>
+                </div>
+                <select required="true" class="form-control" id="q10">
+                  <option value="">Select an Option</option>
+                  <option value="1">1 (Strongly Disagree)</option>
+                  <option value="2">2 (Partly Disagree)</option>
+                  <option value="3">3 (Neutral)</option>
+                  <option value="4">4 (Partly Agree)</option>
+                  <option value="5">5 (Strongly Agree)</option>
+                </select>
+              </div>
+            </div>
+          </div>
+          <div id="image-two" class="col-lg-3 text-center my-auto"><i class="fas fa-users fa-10x"
+              style="color:turquoise"></i></div>
+        </div>
+        <div class="row">
+          <input type="submit" id="submit" class="btn btn-block" style="background-color:palegreen;color:black;" />
+          <button id="success" disabled class="btn btn-success btn-block" style="display:none;"><i
+              class="fas fa-check-circle"></i></button>
+        </div>
+      </form>
+      <!-- Modal -->
+      <button style="display:none;" id="modalButton" data-toggle="modal" data-target="#modal"></button>
+      <div class="modal fade" id="modal" tabindex="-1" role="dialog" aria-labelledby="modalTitle" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="modalTitle">It's a Match!</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div id="modalBody" class="modal-body">
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Modal -->
+      <button style="display:none;" id="modalErrorButton" data-toggle="modal" data-target="#modalError"></button>
+      <div class="modal fade" id="modalError" tabindex="-1" role="dialog" aria-labelledby="modalTitle"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title">Oops!</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <p>You've already entered this information in. Please try again.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row mt-4">
+        <div class="col-lg-3 mb-2">
+          <p><a href="/api/pets" target="_blank">API Friends List</a> | <a href="https://github.com/Jsucameli/petfinder.git"target="_blank">GitHub Repo</a></p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script>
+    $(".textBox").css("height", $("#maxHeight").height());
+    $("form").submit(function (event) {
+      event.preventDefault();
+      var yourScore = [parseInt($("#q1").val().trim()), parseInt($("#q2").val().trim()), parseInt($("#q3").val().trim()), parseInt($("#q4").val().trim()), parseInt($("#q5").val().trim()), parseInt($("#q6").val().trim()), parseInt($("#q7").val().trim()), parseInt($("#q8").val().trim()), parseInt($("#q9").val().trim()), parseInt($("#q10").val().trim())];
+      var newMate = {
+        name: $("#name").val().trim(),
+        photo: $("#photo").val().trim(),
+        scores: yourScore
+      };
+      $.get("/api/pets", function (data) {
+        var isDuplicate = false;
+        for (var i = 0; i < data.length; i++) {
+          for (var x = 0; x < data[i].scores.length; x++) {
+            data[i].scores[x] = parseInt(data[i].scores[x]);
+          }
+          if (JSON.stringify(data[i]) === JSON.stringify(newMate)) {
+            isDuplicate = true;
+          }
+        }
+        if (isDuplicate === false) {
+          $.post("/api/pets", newMate,
+            function (data) {
+              $.get("/api/pets", function (data) {
+                var compatiblePets = [];
+                for (var i = 0; i < data.length; i++) {
+                  if (data[i].name !== $("#name").val().trim()) {
+                    var petScore = data[i].scores;
+                    var compatibility = 0;
+                    for (var x = 0; x < petScore.length; x++) {
+                      var difference = Math.abs(parseInt(petScore[x]) - parseInt(yourScore[x]));
+                      compatibility = compatibility + difference;
+                    }
+                    compatiblePets[i] = compatibility;
+                  }
+                }
+                var min = compatiblePets.reduce((a, b) => Math.min(a, b));
+                var modalBody = $("<div>");
+                var matchName = $(`<h6>${data[compatiblePets.indexOf(min)].name}</h6>`);
+                $(modalBody).append(matchName);
+                var matchImg = $(`<img src="${data[compatiblePets.indexOf(min)].photo}" style="max-width:400px;"/>`);
+                $(modalBody).append(matchImg);
+                $("#modalBody").empty();
+                $("#modalBody").append(modalBody);
+                $("#modalButton").trigger("click");
+                $("#submit").hide();
+                $("#success").show();
+                setTimeout(function () {
+                  $("#success").hide();
+                  $("#submit").show();
+                }, 3000);
+              });
+            });
+        }
+        else {
+          $("#modalErrorButton").trigger("click");
+        }
+      });
+    });
+  </script>
+</body>
+
+</html>
